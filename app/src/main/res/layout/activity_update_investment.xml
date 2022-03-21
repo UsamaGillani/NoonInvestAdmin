@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    tools:context=".UpdateInvestmentActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar"/>
+
+    <EditText
+        android:id="@+id/edt_upd_Investment_Rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedittext"
+        android:hint="Investment Rate"
+        android:textSize="12sp"
+        android:padding="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:textColorHint="@color/hintcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+
+    <EditText
+        android:id="@+id/edt_upd_Daily_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Daily Income"
+        android:padding="20dp"
+        android:textSize="12sp"
+        android:inputType="number"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColorHint="@color/hintcolor"
+        android:background="@drawable/roundedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_upd_Investment_Rate"
+        />
+
+
+    <Button
+        android:id="@+id/btn_updateInvestment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="UPDATE"
+        app:backgroundTint="#0E4DA4"
+        android:textSize="12sp"
+        android:textColor="@color/textview_color"
+        app:layout_constraintTop_toBottomOf="@id/edt_upd_Daily_income"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
